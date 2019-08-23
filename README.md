@@ -12,4 +12,4 @@ text-jumping 文字跳跃CSS动画
 
 nineBox 九宫格随机三个格子变色
 
-访问地址：https://xiamo12.github.io/CSSProject/pettengJsTask1/index.html
+访问地址： https://xiamo12.github.io/CSSAnimation/pettengJsTask1/index.html
