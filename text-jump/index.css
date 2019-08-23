@@ -1,0 +1,61 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: #2d303a;
+  /*overflow-y: hidden;*/
+}
+
+.box {
+  display: flex;
+  align-items: center; /*align-items表示项目在纵轴上的对齐方式*/
+  justify-content: center;/*justify-content表示项目在横轴上的对齐方式*/
+  width: 100%;
+  height: 100%;
+  color: white;
+  /*font: bold 6rem "Product Sans", sans-serif;*/
+}
+
+.letter {
+  animation: bounce 0.75s ease infinite alternate;
+  /*⬆️cubic-bezier(0.05, 0, 0.2, 1)：cubic-bezier是transition、animation当中控制变化的速度曲线，
+  格式是cubic-bezier(x1,y1,x2,y2)；
+  cubic-bezier有四个点：两个默认点(0,0)、(1,1)；两个我们设置的点p1(x1,y1),p2(x2,y2)*/
+  /*display: inline-block;*/
+  /*transform: translate3d(0, 0, 0);*/
+  /*margin-top: 0.5em;*/
+  /*text-shadow: rgba(255, 255, 255, 0.4) 0 0 0.05em;*/
+  font: normal 500 6rem 'Varela Round', sans-serif;
+}
+
+.letter:nth-of-type(1) {
+  animation-delay: -0.083333333s;
+}
+.letter:nth-of-type(3) {
+  animation-delay: 0.0833333333s;
+}
+.letter:nth-of-type(4) {
+  animation-delay: 0.1666666667s;
+}
+.letter:nth-of-type(5) {
+  animation-delay: 0.25s;
+}
+.letter:nth-of-type(6) {
+  animation-delay: 0.3333333333s;
+}
+.letter:nth-of-type(7) {
+  animation-delay: 0.4166666667s;
+}
+
+
+@keyframes bounce {
+  0% {
+    transform: translate3d(0, 0, 0);
+    text-shadow: rgba(255, 255, 255, 0.4) 0 0 0.05em;
+  }
+  100% {
+    transform: translate3d(0, -1em, 0);
+    text-shadow: rgba(255, 255, 255, 0.4) 0 1em 0.35em;
+  }
+}
+
